@@ -61,6 +61,10 @@ namespace Proyecto_Web2_Aguilar_Chino_Gonzales_Perez.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<usuario>()
+                .Property(e => e.saldo)
+                .HasPrecision(10, 2);
+
+            modelBuilder.Entity<usuario>()
                 .HasMany(e => e.transferencias)
                 .WithOptional(e => e.usuario)
                 .HasForeignKey(e => e.id_emisor);

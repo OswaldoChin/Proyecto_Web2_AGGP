@@ -32,6 +32,8 @@ namespace Proyecto_Web2_Aguilar_Chino_Gonzales_Perez.Models
 
         public int? tipo_usuario { get; set; }
 
+        public decimal? saldo { get; set; }
+
         public virtual tipo_usuario tipo_usuario1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

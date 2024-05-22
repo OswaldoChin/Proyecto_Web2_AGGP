@@ -11,6 +11,7 @@ CREATE TABLE usuario(
     clave varchar(50),
     celular char(9),
     tipo_usuario int,
+	saldo decimal(10,2),
 	FOREIGN KEY (tipo_usuario) REFERENCES tipo_usuario(id_tipo_usuario)
 );
 
